@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive menu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="menu">
+        <div class="toggle">
+            <img src="./bars-solid.svg" alt="">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">service</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">team</a></li>
+            <li><a href="#">portfolio</a></li>
+        </ul>
+    </nav>
+    <script>
+        $(document).ready(function(){
+            $('.menu').click(function(){
+                $('ul').toggleClass('active')
+            })
+        })
+    </script>
+</body>
+</html>
