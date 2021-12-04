@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindBlowing Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- boxicons CDN link -->
+    <link href='https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxl-nodejs'></i>
+                <div class="logo_name">Saste Coder</div>
+            </div>
+            <i class='bx bx-menu' id="slidebar_btn" ></i>
+        </div>
+
+        <ul class="nav_list">
+            <li>
+                <a href="#">    
+                    <i class='bx bx-search-alt-2'></i>
+                    <input type="text" name="" placeholder="Search.." id="">
+                </a>
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="#">    
+                    <i class='bx bx-grid-alt' ></i>
+                    <span class="link_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="#">    
+                    <i class='bx bx-user-pin'></i>
+                    <span class="link_name">user</span>
+                </a>
+                <span class="tooltip">user</span>
+            </li>
+            <li>
+                <a href="#">    
+                    <i class='bx bx-chat' ></i>
+                    <span class="link_name">chat</span>
+                </a>
+                <span class="tooltip">chat</span>
+            </li>
+            <li>
+                <a href="#">    
+                    <i class='bx bx-pie-chart-alt-2' ></i>
+                    <span class="link_name">analytics</span>
+                </a>
+                <span class="tooltip">analytics</span>
+            </li>
+            <li>
+                <a href="#">    
+                    <i class='bx bx-folder' ></i>
+                    <span class="link_name">File Manager</span>
+                </a>
+                <span class="tooltip">File Manager</span>
+            </li>
+            <li>
+                <a href="#">    
+                    <i class='bx bx-cart-alt' ></i>
+                    <span class="link_name">order</span>
+                </a>
+                <span class="tooltip">order</span>
+            </li>
+            <li>
+                <a href="#">    
+                    <i class='bx bx-heart' ></i>
+                    <span class="link_name">saved</span>
+                </a>
+                <span class="tooltip">saved</span>
+            </li>
+            <li>
+                <a href="#">    
+                    <i class='bx bx-cog' ></i>
+                    <span class="link_name">setting</span>
+                </a>
+                <span class="tooltip">setting</span>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="./ch.jpeg" alt="">
+                    <div class="name_job">
+                        <div class="name">Vishal kumar</div>
+                        <div class="job">Web Designer</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out' id="log_out" ></i>
+            </div>
+        </div>
+    </div>
+    <div class="home_content">
+        <div class="text">Home Content</div>
+    </div>
+
+    <script>
+        let btn = document.getElementById('slidebar_btn')
+        let sliderbar = document.querySelector('.sidebar')
+        let searchbtn = document.querySelector('.bx-search-alt-2')
+        btn.onclick = function(){
+            sliderbar.classList.toggle('active')
+        }
+        searchbtn.onclick = function(){
+            sliderbar.classList.toggle('active')
+        }
+
+    </script>
+</body>
+</html>
