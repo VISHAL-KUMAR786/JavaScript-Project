@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+    background: url(./background.jpg);
+    background-size: cover;
+    object-fit: cover;
+    min-height: 100vh;
+    /* background: url(./Image/clear.jpg); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.app-main{
+    width: 320px;
+    height: 400px;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background: #000000d0;
+    color: #fff;
+
+}
+input[type="text"]{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    border-radius: 5px;
+    background-color: #0000007c;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 120%;
+    padding-left: 20px;
+    transition: 0.5s;
+}
+input[type="text"]:focus{
+    background: #7c7c7c2b;
+}
+.weather-body{
+    margin-top: 20px;
+    background: #0000007c;
+    padding: 20px 0;
+    border-radius: 6px;
+}
+.weather-status{
+    margin-top: 30px;
+}
+.temp{
+    font-size: 60px;
+    text-shadow: 03px 3px 0 rgba(255, 255, 255, 0.3);
+}
