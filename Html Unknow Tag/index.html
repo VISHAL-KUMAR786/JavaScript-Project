@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html cool tricks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 1. details + summary tag  -->
+    <details>
+        <summary>This is something new</summary>
+        <h2>simple heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui adipisci dolore soluta quo aut, error blanditiis obcaecati! Ipsam maxime cupiditate sed quaerat, laboriosam, quam, distinctio porro obcaecati excepturi tempore pariatur!</p>
+    </details>
+    <!-- 2. Awesome input tag -->
+
+    <input type="color" name="" id="">
+    <input type="range" name="" id="" min="0" max="1000" value="100">
+    <input type="date" name="" id="">
+    <input type="datetime-local" name="" id="">
+    <input type="time" name="" id="">
+    <input type="week" name="" id="">
+
+    <!-- 3. meter tag -->
+    <meter min="0" max="100" value="10"></meter>
+
+    <!-- 4. progress tag  -->
+    <progress  min="0" max="100" value="90"></progress>
+
+    <!-- 5. datalist  -->
+    <input type="text" name="" placeholder="Enter car name" list="suggest" id="">
+    <datalist id="suggest">
+        <option value="Thar new">this is something that you  must try</option>
+        <option value="honda city">this is something that you  must try</option>
+        <option>Thar</option>
+        <option>tesla</option>
+        <option>honda city</option>
+    </datalist>
+    <!-- 6. optiongroup -->
+    <select name="" id="">
+        <option value="abc">counting no1</option>
+        <option value="abc">counting no2</option>
+        <option value="abc">counting no3</option>
+        <option value="abc">counting no4</option>
+        <option value="abc">counting no5</option>
+        <optgroup label="new car">
+            <option value="abc">counting no1</option>
+            <option value="abc">counting no2</option>
+            <option value="abc">counting no3</option>
+            <option value="abc">counting no4</option>
+            <option value="abc">counting no5</option>
+        </optgroup>
+    </select>
+
+    <!-- BONUS TIP's JS -->
+    <article>
+        <div id="div-01">count no 01</div>
+        <div id="div-02">count no 02</div>
+        <div id="div-03">count no 03</div>
+        <div id="div-04">count no 04</div>
+        <section>
+            <div id="div-05">count no 05</div>
+            <div id="div-06">count no 06</div>
+            <div id="div-07">count no 07</div>
+            <div id="div-08">count no 08</div>
+        </section>
+    </article>
+    <script>
+        let color = document.getElementById('div-06')
+        color.closest('div').style.backgroundColor = "red"
+        color.closest('section').style.backgroundColor = "yellow"
+        color.closest('article').style.backgroundColor = "pink"
+    </script>
+</body>
+</html>
