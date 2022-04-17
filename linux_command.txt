@@ -1,0 +1,278 @@
+alt + E => chrome
+super + s => window search
+
+to autocomplete the name in cmd 
+write some word then press tab
+
+to know the content of file in cmd
+& file_name
+
+how to open powershell on right click
+press Shift + right click > open powershell
+
+how to install 7zip
+sudo apt install p7zip
+
+on autosave the cursor move down in vs code use this command to fix it 
+code --disable-extensions
+
+how to reset vs code 
+press ctrl + p 
+type > open setting(Json) > erase all the content just leave the paranthesis
+
+how to delete the basic icon give in desktop of kali linux
+right click to desktop > go to icon then at the last > uncheck all the default icon 
+
+install vlc on kali linux
+sudo apt update
+sudo apt install vlc
+vlc
+
+if by mistake delete the taskbar then follow this tutorial
+https://www.youtube.com/watch?v=7L5uP036wxg
+
+powerfull command of changing confing 
+sudo nano /etc/apt/sources.list
+
+change the font size of the chrome 
+go to apperance > font > cantarell thin 10
+
+change black theme of kali linux 
+go to apperance > style > light | window 10
+
+resize the titlebar and border
+go to window manager > theme > window 
+
+To resize the window press 
+alt + f8
+
+single click to activate item 
+right click on desktop > go to desktop > icons > sinlge click to activate items
+
+To minimize all the window all at once
+shift + alt + d 
+
+for the shortcut of Super + E
+go to keyboard > application shortcut > add command <> Thunar -> Super + E
+
+press it for finder at where you cursor is currently at
+alt + f1 
+
+normal terminal shortcut
+keyboard > application shortcut > add command <> qterminal -> shift + alt + t
+
+for search anything with command
+alt + f2 
+
+on click open setting
+file manager prefrences > behaviour > single click to activate item
+
+hide the taskbar when not in use in kali linux
+click on taskbar > panel > panel prefrences > automatically hide the pannel : always
+
+change the taskbar location
+::=> click on taskbar > panel > panel prefrences > then click on :: drag and drop where you want it
+
+installing console-data
+sudo apt-get update && sudo apt-get install console-data
+
+Downloading chrome 
+1. apt update
+2. wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+3. apt install ./google-chrome-stable_current_amd64.deb
+4. google-chrome --no-sandbox
+
+clear the terminal in linux 
+ctrl + l
+
+search like window use 
+ctrl + esc
+
+fixing the keyboard problem
+go to keyboard > layout > on the checkbox > select > English (US)
+
+
+
+
+
+
+
+
+
+
+The 22 most basic commands of Kali Linux
+
+ > 1. uname: Get detailed info on your system specifications with this command. Great place to start familiarizing yourself with Kali User Interface
+ 	>> uname --help
+
+ > 2. pwd: This command prints the name of the working directory
+ 	>> pwd
+ 	
+ > 3. ls: This command Displays what each file contains and the directories they’re stored in. An easy way to view all the contents (files) contained in a directory
+ 	>> ls
+
+ > 4. history: Get to know all the previously used commands and attributes with history command. It lists all the previous commands you entered (stored in bash shell).
+	>> history
+
+ > 5. macchanger:macchanger changes your mac address, essentially changing your identity.
+	>> macchanger --help
+
+ > 6. ifconfig :ifconfig <=> interface configuration.
+	>> ifconfig
+
+ > 7. echo: It’s like the basic print function you learned in GW basic. Prints any text to where you direct it to.
+	>>echo "my name is khan"
+	>>echo --vishal is a good boy
+	> 8. Date command : get the Date
+    >>date
+
+ > 8. 
+
+ > 9. Cal command : displays the current month's formatted calendar
+    >>Cal
+
+ > 10. Cal command with year : displays the current year's formatted calendar
+    >>Cal 2022
+
+ > 11. cp command :  is used to copy files or a group of files or directories that create an exact image of a file on a disk with a different file name.
+ copy content can be a folder
+    >>cp Content_text_file_name Empty_file_name
+
+ > 12. 'whoami' command :  is used to print the effective user ID whereas the who command prints information regarding users who are presently logged in.
+ The "w" command can also be used to view who is logged on and what they are doing with more details.
+    >>whoami
+    >>who or w 
+
+ > 13. 'whoami' command : is used to print the effective user ID whereas the who command prints information regarding users who are presently logged in.
+ The "w" command can also be used to view who is logged on and what they are doing with more details.
+    >>whoami
+    >>who or w 
+
+ > 14. Cat command : create single or many files, concatenate files and redirect, view contain of file output in terminal or files.
+ Usually, we use the cat command to display the content of a file.
+    >>cat filename
+
+ > 15. mkdir command : is used to create directories.
+    >>mkdir Penetration testing  (creating two new folder at a time)
+
+ > 16. rm command : is used to delete files.
+    >>rm file_name
+
+ > 17. mv command : move or renames files and directories on our file system.
+    >>mv file_name_which_have_to_be_moved To_which_folder_name
+
+ > 18. uptime command displays the amount of time the system has been running. Uptime's basic usage is simple: simply type the name of the command and click Enter.
+ Use the -p command-line option if we merely want to know how long the system has been up for and in a more human-readable format.
+    >>uptime 
+    >>uptime -p
+
+ > 19. 'users' command : is used to display the login names of users logged in on the system.
+    >>users
+
+ > 20. less command : is used to view files instead of opening the file. The less command is a more powerful variant of the "more" command which is used to show information one page at a time to the terminal.
+ We can view any text file with the help of the "less" command simply by typing the following command into a terminal window:
+ ctrl + z to end
+    >>less file_name
+    >>less /etc/passwd  
+
+
+
+
+
+
+
+
+
+
+
+download vs code 
+cd Downloads
+sudo apt install ./code_amd64.deb
+
+some vs code cheatSheet
+open code with current directory
+ > code .
+
+open the current directory in the most recently used code window
+ > code -r .
+
+create a new window
+ > code -n
+
+change the language
+ > code --locale=es
+
+open diff editor
+ > code --diff <file1> <file2>
+
+open file at specific line and column <file:line[:character]>
+ > code --goto package.json:10:5
+
+see help options
+ > code --help
+
+disable all extensions
+ > code --disable-extensions
+
+download python
+ > py linux download
+ > go to downloads
+ > tar -xvf Python-3.x.x.tar.xz
+ > cd Python3.x.x
+ > ./configure
+ > make
+ > make install
+ > python3 -V
+ > apt-get install python3-pip
+ > search on goole if getting an error on pip (installation) => pip install on ubuntu
+ > pip list (for the list of installed packages)
+ 
+download node js
+ > https://www.how2shout.com/linux/how-to-install-npm-and-nodejs-14-x-on-kali-linux/
+ > E: Unable to locate package nodejs in kali linux
+ > https://www.kali.org/docs//general-use/kali-linux-sources-list-repositories/  
+ > copy and paste the commands and then
+ > sudo apt-get update
+ > sudo apt-get upgrade
+ > sudo apt-get install nodejs
+
+ > for more refrence watch out
+ 	>>https://www.youtube.com/watch?v=CtNwQfyfr0c
+
+download git 
+ >apt-get install git
+ >apt-get update 
+ >apt-get upgrade
+ >git --version
+ >git config --global user.name "Vishal kumar"
+ >git config --global user.email "vishalkumar#####@gmail.com"
+
+…or create a new repository on the command line
+echo "# Kali-linux-shortcut" >> README.md
+ >git init
+ >git add README.md
+ >git commit -m "first commit"
+ >git branch -M main
+ >git remote add origin https://github.com/VISHAL-KUMAR786/Kali-linux-shortcut.git
+ >git push -u origin main
+  
+…or push an existing repository from the command line
+ > git remote add origin https://github.com/VISHAL-KUMAR786/Kali-linux-shortcut.git
+ > git branch -M main
+ > git push -u origin main 
+ 
+how to clone a repositry in vs code 
+ > press Ctrl + Alt + p
+ > type git:clone
+
+how to push code in existing repository from vs code 
+ > git init -b main
+ > git add . && git commit -m "initial commit"
+ > git push -u origin main 
+
+how to clone another person repository 
+ > git clone repository-link 
+
+Updating a local repository with changes from a GitHub repository
+ > was: git pull origin master
+ > now: git pull origin main
