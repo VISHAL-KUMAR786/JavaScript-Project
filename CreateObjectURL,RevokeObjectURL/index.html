@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btnLoad">Load</button>
+    <button id="btnUnload">Unload</button>
+
+    <img src="#" alt="my name is khan" id="img1">
+    <img src="#" alt="my name is khan" id="img2">
+    <img src="#" alt="my name is khan" id="img3">
+    <img src="#" alt="my name is khan" id="img4">
+
+    <script>
+        let btnLoad = document.querySelector("#btnLoad")
+        let btnUnload = document.querySelector("#btnUnload")
+        
+        const img1 = document.getElementById("img1")
+        const img2 = document.getElementById("img2")
+        const img3 = document.getElementById("img3")
+        const img4 = document.getElementById("img4")
+
+        const imgs = []
+        imgs.push(img1)
+        imgs.push(img2)
+        imgs.push(img3)
+        imgs.push(img4)
+
+        let objUrl = null
+
+        imgs.forEach(i => i.addEventListener("click", e=>e.target.src = objUrl))
+
+        btnLoad.addEventListener("click",async e =>{
+            const result = await fetch(`http://127.0.0.1:5500/Screenshot (370).png`)
+            const blob = await result.blob()
+            objUrl = URL.createObjectURL(blob)
+        })
+
+        btnUnload.addEventListener("click",e =>{
+            URL.revokeObjectURL(objUrl)
+        })
+    </script>
+</body>
+</html>
