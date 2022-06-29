@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translating App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="text-input">
+                <textarea class="form-text" placeholder="Enter Text"></textarea>
+                <textarea class="form-to" placeholder="Translation" readonly disabled></textarea>
+            </div>
+            <ul class="controls">
+                <li class="row from">
+                    <div class="icons">
+                        <ion-icon id="form-v" name="volume-medium-outline"></ion-icon>
+                        <ion-icon id="form-c" name="copy-outline" class="copy12"></ion-icon>
+                    </div>
+                    <select></select>
+                </li>
+                <li class="exchange">
+                    <ion-icon name="swap-horizontal-outline"></ion-icon> 
+                </li>
+                <li class="row to">
+                    <select></select>
+                    <div class="icons">
+                        <ion-icon name="volume-medium-outline"></ion-icon>
+                        <ion-icon name="copy-outline" class="copy12"></ion-icon>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button>Translate Text</button>
+    </div>
+
+    <script src="countries.js"></script>
+    <script src="main.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
