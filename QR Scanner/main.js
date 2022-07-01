@@ -23,9 +23,10 @@ function fetchRequest(formData,file){
     }).then(res => res.json())
     .then(result =>{
         result = result[0].symbol[0].data
+        console.log(result);
         if(!result) return
         wrapper.classList.add("active")
-        wrapper.querySelector(".details textarea").innerText.innerText = result
+        wrapper.querySelector(".details textarea").innerText = result
         form.querySelector("img").src = URL.createObjectURL(file)
     }).catch((e)=>{
         innerText.innerText = "Unable to scan QR"
