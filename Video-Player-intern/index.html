@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Video Player</title>
+    <link rel="stylesheet" href="./style.scss">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet" />
+
+    <!-- theme -->
+    <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <video id="myvideo" class="player__video viewer video-js vjs-custom-theme" data-setup="{}" controls autoplay
+            muted>
+            <source class="active" src="./652333414.mp4" type="video/mp4" />
+            <source autoplay src="./videoplayback (1).mp4" type="video/mp4" />
+        </video>
+    </div>
+
+    <script src="scripts.js"></script>
+    <script src="https://vjs.zencdn.net/7.19.2/video.min.js"></script>
+</body>
+
+</html>
